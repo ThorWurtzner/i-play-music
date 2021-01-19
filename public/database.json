@@ -1,0 +1,25 @@
+{
+    "Walkthrough": [
+        {
+            "image": "./images/bgAsset1",
+            "title": "Where Words Fail, Music Speaks",
+            "text": "Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend."
+        },
+        {
+            "image": "./images/bgAsset2",
+            "title": "No Music No Life",
+            "text": "Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend."
+        },
+        {
+            "image": "./images/bgAsset3",
+            "title": "Peace. Love. Music",
+            "text": "Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend."
+        }
+    ],
+
+    "Welcome": [
+        {
+
+        }
+    ]
+}

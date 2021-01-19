@@ -1,0 +1,19 @@
+
+.welcome {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkMainBg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__image {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to   {opacity: 1}
+}

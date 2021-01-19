@@ -1,0 +1,92 @@
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkPink);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__title {
+    color: var(--darkFont);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 36px;
+}
+
+.login__form {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.login__form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form div label {
+    color: var(--darkFont);
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.login__form div input {
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #fff;
+    color: var(--darkFont);
+    position: relative;
+    height: 40px;
+    font-size: 16px;
+
+    padding: 5px;
+}
+
+.login__form div input::placeholder {
+    color: var(--darkFont);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.login__form button {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border: 3px solid #fff;
+    background: none;
+    height: 60px;
+    border-radius: 25px;
+    margin-top: 30px;
+    color: var(--darkFont);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.login__form img {
+    width: 18px;
+    position: absolute;
+    right: 25px;
+    margin-top: 8px;
+}
+
+.login__fingerprint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__fingerprint p {
+    color: var(--darkFont);
+    margin-top: 10px;
+}

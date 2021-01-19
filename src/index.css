@@ -1,0 +1,44 @@
+@import "./variables.css";
+
+@import "./App.css";
+
+@import "./views/Walkthrough/Walkthrough.css";
+@import "./views/Walkthrough/Welcome/Welcome.css";
+@import "./views/Login/Login.css";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a[class] {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, label {
+  display: block;
+}
