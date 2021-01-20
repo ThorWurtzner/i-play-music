@@ -36,8 +36,8 @@
             "people": "2,003"
         },
         {
-            "image": "./images/biggie.jpg",
-            "title": "RAP",
+            "image": "https://picsum.photos/400",
+            "title": "Rap",
             "hashtag": "50",
             "portraits": [
                 {
@@ -51,6 +51,23 @@
                 }
             ],
             "people": "3,123"
+        },
+        {
+            "image": "./images/country.jpg",
+            "title": "Country",
+            "hashtag": "22",
+            "portraits": [
+                {
+                    "portrait": "./images/portrait1.jfif"
+                },
+                {
+                    "portrait": "./images/portrait2.jfif"
+                },
+                {
+                    "portrait": "./images/portrait3.jfif"
+                }
+            ],
+            "people": "1,321"
         }
     ]
 }

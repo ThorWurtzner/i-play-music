@@ -12,7 +12,7 @@ export default function TalkingAbout({props}) {
             <div className="talkingAboutPortraits">
                 {props.portraits.map(content => <CirclePortrait portrait={content.portrait} key={content.portrait} />)}
             </div>
-            <p className="talkingAboutText"><span>{props.people}</span> are talking about this"</p>
+            <p className="talkingAboutText"><span>{props.people}</span> are talking about this</p>
         </div>
     )
 }

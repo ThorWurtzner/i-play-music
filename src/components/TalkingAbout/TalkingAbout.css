@@ -5,7 +5,7 @@
 }
 
 .talkingAboutPortraits {
-    width: 90px;
+    width: 85px;
     display: flex;
     align-items: center;
     position: relative;
@@ -13,8 +13,8 @@
 }
 
 .talkingAboutPortraits img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     box-shadow: -1px 2px 3px rgba(43, 43, 43, 0.726);
 }
@@ -33,11 +33,12 @@
 
 .talkingAboutText {
     color: var(--darkFont);
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 300;
 }
 
 .talkingAboutText span {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
+    margin-right: 2px;
 }
