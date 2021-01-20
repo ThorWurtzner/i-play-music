@@ -3,7 +3,7 @@ import { Router } from "@reach/router";
 import './App.css';
 import Walkthrough from './views/Walkthrough/Walkthrough';
 import Login from './views/Login/Login';
-
+import Trends from './views/Trends/Trends';
 
 function App() {
 
@@ -17,8 +17,9 @@ function App() {
 
 	return (
 		<Router>
-			<Walkthrough path="/introduction" />
+			<Walkthrough data={database.walkthrough} path="/" />
 			<Login path="/login" />
+			<Trends data={database.trends} path="/trends" />
 		</Router>
 	)
 }

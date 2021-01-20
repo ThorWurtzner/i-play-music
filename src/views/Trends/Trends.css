@@ -1,0 +1,7 @@
+
+.trends {
+    background-color: var(--darkPink);
+    min-height: 100vh;
+
+    padding: var(--pagePadding);
+}

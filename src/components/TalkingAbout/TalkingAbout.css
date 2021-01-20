@@ -1,0 +1,43 @@
+
+.talkingAbout {
+    display: flex;
+    align-items: center;
+}
+
+.talkingAboutPortraits {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 15px;
+}
+
+.talkingAboutPortraits img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    box-shadow: -1px 2px 3px rgba(43, 43, 43, 0.726);
+}
+
+.talkingAboutPortraits img:nth-child(3) {
+    right: 0;
+}
+
+.talkingAboutPortraits img:nth-child(2) {
+    right: 25px;
+}
+
+.talkingAboutPortraits img:nth-child(1) {
+    right: 50px;
+}
+
+.talkingAboutText {
+    color: var(--darkFont);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.talkingAboutText span {
+    font-size: 14px;
+    font-weight: bold;
+}

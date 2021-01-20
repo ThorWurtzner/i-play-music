@@ -1,0 +1,66 @@
+
+.trendingCard {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.21);
+
+    display: flex;
+    align-items: flex-end;
+
+    margin-top: 20px;
+}
+
+.trendingCard__bgImage {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.trendingCard__circleIcon {
+    position: absolute;
+    right: 30px;
+    top: -20px;
+    box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.21);
+    border-radius: 50%;
+    z-index: 9001;
+}
+
+.trendingCard__overlay {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(238, 238, 238, 0) 10%, rgba(0, 0, 0, 0.87) 90%);
+    z-index: 5;
+}
+
+.trendingCard__info {
+    position: relative;
+    z-index: 9000;
+
+    padding: var(--pagePadding);
+    margin-bottom: 40px;
+}
+
+.trendingCard__info__title {
+    color: var(--darkFont);
+    font-size: 40px;
+}
+
+.trendingCard__info__hashtag {
+    color: var(--darkFont);
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-top: 15px;
+    margin-bottom: 30px;
+}

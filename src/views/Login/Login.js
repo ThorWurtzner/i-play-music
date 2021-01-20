@@ -8,14 +8,14 @@ export default function Login() {
 
             <form className="login__form">
                 <div>
-                    <label forHtml="username">Username</label>
+                    <label htmlFor="username">Username</label>
                     <div>
                         <input type="text" id="username" name="username" placeholder="Enter your username" />
                         <img src="./images/icons/user.png" alt="user icon" />
                     </div>
                 </div>
                 <div>
-                    <label forHtml="password">Password</label>
+                    <label htmlFor="password">Password</label>
                     <div>
                         <input type="password" id="password" name="password" placeholder="Enter your password" />
                         <img src="./images/icons/key.png" alt="key icon" />

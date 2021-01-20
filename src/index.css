@@ -3,7 +3,7 @@
 @import "./App.css";
 
 @import "./views/Walkthrough/Walkthrough.css";
-@import "./views/Walkthrough/Welcome/Welcome.css";
+@import "./components/Welcome/Welcome.css";
 @import "./views/Login/Login.css";
 
 /* Box sizing rules */

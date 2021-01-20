@@ -6,13 +6,17 @@
     
     display: flex;
     align-items: flex-end;
+
+    padding: var(--pagePadding);
 }
 
 /* .walkthrough__bgImage {
     width: 100%;
     position: absolute;
-    top: -40px;
-    transform: scale(1.2);
+    top: 0;
+    z-index: 0;
+
+    background: url("/images/bgAsset1.svg") no-repeat;
 } */
 
 .walkthrough__content {
@@ -25,12 +29,10 @@
 
 .walkthrough__content__title {
     text-align: center;
-    width: 300px;
     color: var(--darkFont);
 }
 
 .walkthrough__content__text {
-    width: 300px;
     font-size: 14px;
     color: var(--darkFont);
     font-weight: 200;

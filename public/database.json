@@ -1,5 +1,5 @@
 {
-    "Walkthrough": [
+    "walkthrough": [
         {
             "image": "./images/bgAsset1",
             "title": "Where Words Fail, Music Speaks",
@@ -17,9 +17,40 @@
         }
     ],
 
-    "Welcome": [
+    "trends": [
         {
-
+            "image": "./images/rave.jpg",
+            "title": "EDM",
+            "hashtag": "33",
+            "portraits": [
+                {
+                    "portrait": "./images/portrait1.jfif"
+                },
+                {
+                    "portrait": "./images/portrait2.jfif"
+                },
+                {
+                    "portrait": "./images/portrait3.jfif"
+                }
+            ],
+            "people": "2,003"
+        },
+        {
+            "image": "./images/biggie.jpg",
+            "title": "RAP",
+            "hashtag": "50",
+            "portraits": [
+                {
+                    "portrait": "./images/portrait1.jfif"
+                },
+                {
+                    "portrait": "./images/portrait2.jfif"
+                },
+                {
+                    "portrait": "./images/portrait3.jfif"
+                }
+            ],
+            "people": "3,123"
         }
     ]
 }
