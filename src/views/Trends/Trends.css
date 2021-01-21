@@ -4,10 +4,9 @@
     min-height: 100vh;
 
     padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
 
     overflow-x: hidden;
-
-    padding-bottom: 70px;
 }
 
 .trends article:nth-of-type(1) {

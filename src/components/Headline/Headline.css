@@ -1,6 +1,11 @@
 
 .headline {
     font-size: 34px;
-    color: var(--darkFont);
     margin-bottom: 30px;
+
+    background-image: linear-gradient(to right, #EE0979, #FF6A00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
 }

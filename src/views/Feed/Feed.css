@@ -1,0 +1,14 @@
+
+.feed {
+    background-color: var(--darkMainBg);
+    min-height: 100vh;
+    
+    padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
+
+    overflow: hidden;
+}
+
+.feed__hashtagContainer {
+    display: flex;
+}

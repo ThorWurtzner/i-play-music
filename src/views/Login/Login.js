@@ -1,3 +1,4 @@
+import { Link } from "@reach/router";
 import "./Login.css";
 
 export default function Login() {
@@ -22,7 +23,7 @@ export default function Login() {
                     </div>
                 </div>
 
-                <button>LOG IN</button>
+                <Link to="/trends"><button>LOG IN</button></Link>
             </form>
 
             <div className="login__fingerprint">

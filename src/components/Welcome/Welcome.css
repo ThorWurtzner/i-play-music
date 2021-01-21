@@ -21,6 +21,7 @@
 
 .welcome__image {
     animation: fadeIn 2s;
+    pointer-events: none;
 }
 
 @keyframes fadeIn {

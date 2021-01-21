@@ -4,7 +4,7 @@ import TalkingAbout from "../TalkingAbout/TalkingAbout";
 import "./TrendingCard.css";
 // import image from "./concert.png"
 
-export default function TrendingCard({props}) {
+export default function TrendingCard(props) {
     
     return (
         <article className="trendingCard">
@@ -18,7 +18,7 @@ export default function TrendingCard({props}) {
                 <h2 className="trendingCard__info__title">{props.title}</h2>
                 <h3 className="trendingCard__info__hashtag">{props.hashtag} #hashtags</h3>
                 <div>
-                    <TalkingAbout props={props} />
+                    <TalkingAbout people="2,003" />
                 </div>
             </section>
         </article>

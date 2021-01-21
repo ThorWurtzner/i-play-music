@@ -5,11 +5,11 @@ import Headline from "../../components/Headline/Headline";
 import TrendingCard from "../../components/TrendingCard/TrendingCard";
 import "./Trends.css";
 
-export default function Trends({data}) {
+export default function Trends() {
 
-    if (data === undefined) {
-        return null;
-    }
+    // if (data === undefined) {
+    //     return null;
+    // }
 
     // Weird bug like theres some kind of lazy scrolling,
     // there's a huge lag spike when scrolling to second card
@@ -18,8 +18,9 @@ export default function Trends({data}) {
         <>
         <main className="trends">
             <Header />
-            <Headline />
-            <TrendingCard className="trendingCardFirst" props={data[0]}/>
+            <Headline title="Latest Trends"/>
+            {/* <TrendingCard className="trendingCardFirst" props={data[0]}/> */}
+            <TrendingCard className="trendingCardFirst" hashtag="45" image="./images/country.jpg" people="2,003" title="Country" />
             <div className="trendingNow">
                 <h4>Trending <br /> Now</h4>
                 <div className="trendingNowCard">
@@ -31,7 +32,10 @@ export default function Trends({data}) {
                     <h5>Classical</h5>
                 </div>
             </div>
-            {data.slice(1).map(content => <TrendingCard props={content} key={content.title} />)}
+            {/* {data.slice(1).map(content => <TrendingCard props={content} key={content.title} />)} */}
+            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
+            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
+            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
         </main>
         <FooterNav />
         </>

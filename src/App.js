@@ -4,6 +4,7 @@ import './App.css';
 import Walkthrough from './views/Walkthrough/Walkthrough';
 import Login from './views/Login/Login';
 import Trends from './views/Trends/Trends';
+import Feed from './views/Feed/Feed';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 			<Walkthrough data={database.walkthrough} path="/" />
 			<Login path="/login" />
 			<Trends data={database.trends} path="/trends" />
+			<Feed data={database.trends} path="/feed" />
 		</Router>
 	)
 }

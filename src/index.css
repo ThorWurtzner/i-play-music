@@ -3,8 +3,20 @@
 @import "./App.css";
 
 @import "./views/Walkthrough/Walkthrough.css";
-@import "./components/Welcome/Welcome.css";
+@import "./views/Walkthrough/Page1/Page1.css";
+@import "./views/Walkthrough/Page2/Page2.css";
+@import "./views/Walkthrough/Page3/Page3.css";
 @import "./views/Login/Login.css";
+@import "./views/Trends/Trends.css";
+
+@import "./components/Welcome/Welcome.css";
+@import "./components/TrendingCard/TrendingCard.css";
+@import "./components/TalkingAbout/TalkingAbout.css";
+@import "./components/Headline/Headline.css";
+@import "./components/Header/Header.css";
+@import "./components/FooterNav/FooterNav.css";
+@import "./components/CirclePortrait/CirclePortrait.css";
+@import "./components/CircleIcon/CircleIcon.css";
 
 /* Box sizing rules */
 *,
@@ -28,8 +40,8 @@ ol[class] {
   list-style: none;
 }
 
-/* A elements that don't have a class get default styles */
-a[class] {
+/* A elements get default styles */
+a {
     text-decoration: none;
 }
 

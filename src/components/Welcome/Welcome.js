@@ -10,7 +10,6 @@ export default function Welcome() {
         }, 2000);
     }
 
-    
     return (
         <div className="welcome" onClick={handleClick}>
             <img className="welcome__image" src="./images/icons/main.png" alt="iPlayMusic icon" />

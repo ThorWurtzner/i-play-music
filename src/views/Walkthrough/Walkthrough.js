@@ -1,5 +1,9 @@
 import "./Walkthrough.css";
 import Welcome from "../../components/Welcome/Welcome";
+import { Link } from "@reach/router";
+import Page1 from "./Page1/Page1";
+import Page2 from "./Page2/Page2";
+import Page3 from "./Page3/Page3";
 
 export default function Walkthrough({data}) {
 
@@ -12,45 +16,9 @@ export default function Walkthrough({data}) {
     return (
         <>
         <Welcome />
-
-        <main className="walkthrough">
-            {/* <img className="walkthrough__bgImage" src="./images/bgAsset2.png" alt="" /> */}
-            {/* <div className="walkthrough__bgImage"></div> */}
-
-            <section className="walkthrough__content">
-                <h1 className="walkthrough__content__title">Where Words Fail, Music Speaks</h1>
-                <p className="walkthrough__content__text">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
-                <div className="walkthrough__content__icons">
-                    <div>
-                        <img src="./images/icons/sonar.png" alt="sound icon" />
-                    </div>
-                    <div>
-                        <img src="./images/icons/heart.png" alt="sound icon" />
-                    </div>
-                    <div>
-                        <img src="./images/icons/music-note.png" alt="sound icon" />
-                    </div>
-                </div>
-                <p className="walkthrough__content__skip">SKIP</p>
-            </section>
-            
-            {/* <section className="walkthrough__content">
-                <h1 className="walkthrough__content__title">{}</h1>
-                <p className="walkthrough__content__text">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
-                <div className="walkthrough__content__icons">
-                    <div>
-                        <img src="./images/icons/sonar.png" alt="sound icon" />
-                    </div>
-                    <div>
-                        <img src="./images/icons/heart.png" alt="sound icon" />
-                    </div>
-                    <div>
-                        <img src="./images/icons/music-note.png" alt="sound icon" />
-                    </div>
-                </div>
-                <p className="walkthrough__content__skip">SKIP</p>
-            </section> */}
-        </main>
+        <Page1 />
+        <Page2 />
+        <Page3 />
         </>
     )
 }

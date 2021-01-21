@@ -3,12 +3,12 @@ import "./FooterNav.css";
 
 export default function FooterNav() {
     return (
-        <nav class="footerNav">
-            <Link to="/"><img src="./images/icons/pulse.png" /></Link>
-            <Link to="/"><img src="./images/icons/mic.png" /></Link>
-            <Link to="/"><img src="./images/icons/mainNavBtn.png" /></Link>
-            <Link to="/"><img src="./images/icons/lightMode.png" /></Link>
-            <Link to="/"><img src="./images/icons/coq.png" /></Link>
+        <nav className="footerNav">
+            <Link to="/"><img src="./images/icons/pulse.png" alt="Navigation" /></Link>
+            <Link to="/"><img src="./images/icons/mic.png" alt="Navigation" /></Link>
+            <Link to="/"><img src="./images/icons/mainNavBtn.png" alt="Navigation" /></Link>
+            <Link to="/"><img src="./images/icons/lightMode.png" alt="Navigation" /></Link>
+            <Link to="/"><img src="./images/icons/coq.png" alt="Navigation" /></Link>
         </nav>
     )
 }
