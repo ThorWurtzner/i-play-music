@@ -6,6 +6,7 @@ import Login from './views/Login/Login';
 import Trends from './views/Trends/Trends';
 import Feed from './views/Feed/Feed';
 import Albums from './views/Albums/Albums';
+import Player from './views/Player/Player';
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
 			<Login path="/login" />
 			<Trends data={database.trends} path="/trends" />
 			<Feed data={database.trends} path="/feed" />
-			<Albums path="albums" />
+			<Albums path="/albums" />
+			<Player path="/player" song="Don't Call Me Up" artist="Mabel" songLength="3:40" />
 		</Router>
 	)
 }

@@ -1,5 +1,6 @@
 import { Link } from "@reach/router";
 import "./Page1.css";
+import background from "./bgAsset1.svg";
 
 export default function Page1() {
 
@@ -13,6 +14,8 @@ export default function Page1() {
 
     return (
         <main className="page1" onClick={handleClick}>
+            <div className="page1__bg" style={{backgroundImage: `url(${background})`}}></div>
+
             <section className="page1__content">
                 <h1 className="page1__content__title">Where Words Fail, Music Speaks</h1>
                 <p className="page1__content__text">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
@@ -27,8 +30,8 @@ export default function Page1() {
                         <img src="./images/icons/music-note.png" alt="sound icon" />
                     </div>
                 </div>
-                <Link to="/login"><p className="page1__content__skip">SKIP</p></Link>
             </section>
+            <Link to="/login"><p className="page1__content__skip">SKIP</p></Link>
         </main>
     )
 }

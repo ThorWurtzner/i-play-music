@@ -3,7 +3,7 @@ import "./CircleIcon.css";
 export default function CircleIcon(props) {
     return (
         <div className="circleIcon">
-            <img src="./images/icons/lightning.svg" alt="" />
+            <img src={props.icon} alt="" />
         </div>
 
         // <div className="circleIcon">

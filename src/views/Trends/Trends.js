@@ -18,7 +18,7 @@ export default function Trends() {
         <>
         <main className="trends">
             <Header />
-            <Headline title="Latest Trends"/>
+            <Headline title="Latest Trends" font="#fff" />
             {/* <TrendingCard className="trendingCardFirst" props={data[0]}/> */}
             <TrendingCard className="trendingCardFirst" hashtag="45" image="./images/country.jpg" people="2,003" title="Country" />
             <div className="trendingNow">
