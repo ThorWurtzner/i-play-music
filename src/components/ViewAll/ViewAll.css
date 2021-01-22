@@ -1,0 +1,21 @@
+
+.viewAll {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    /* page padding +1% */
+    margin-bottom: 7%;
+}
+
+.viewAll h3 {
+    color: var(--darkFont);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.viewAll p {
+    color: var(--darkPink);
+    font-size: 16px;
+    font-weight: 200;
+}

@@ -1,0 +1,38 @@
+
+.albumSpecifics {
+    height: 85px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--darkFont);
+}
+
+.albumSpecifics__content {
+    display: flex;
+}
+
+.albumSpecifics__content div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.albumSpecifics__content h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.albumSpecifics__content p {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.albumSpecifics__songCount {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+/* .albumSpecifics */

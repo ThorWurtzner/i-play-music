@@ -1,0 +1,21 @@
+
+.albums {
+    background-color: var(--darkMainBg);
+    min-height: 100vh;
+    
+    padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
+
+    overflow: hidden;
+}
+
+.albums__featured {
+    margin-bottom: 7%;
+}
+
+.albums__featured__images {
+    height: 150px;
+    min-width: 500px;
+    display: flex;
+    gap: 15px;
+}

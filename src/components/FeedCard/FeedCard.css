@@ -2,6 +2,7 @@
 .feedCard {
     min-height: 350px;
     width: 100%;
+    max-width: 400px;
     position: relative;
     background-color: var(--darkBlue);
     margin: 0 auto;

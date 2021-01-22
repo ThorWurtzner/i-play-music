@@ -5,6 +5,7 @@ import Walkthrough from './views/Walkthrough/Walkthrough';
 import Login from './views/Login/Login';
 import Trends from './views/Trends/Trends';
 import Feed from './views/Feed/Feed';
+import Albums from './views/Albums/Albums';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 			<Login path="/login" />
 			<Trends data={database.trends} path="/trends" />
 			<Feed data={database.trends} path="/feed" />
+			<Albums path="albums" />
 		</Router>
 	)
 }
