@@ -11,7 +11,7 @@ export default function TrendingCard(props) {
             <div className="trendingCard__overlay"></div>
             <img className="trendingCard__bgImage" src={props.image} alt="" />
             <div className="trendingCard__circleIcon">
-                <CircleIcon />
+                <CircleIcon icon="./images/icons/lightning.svg" />
             </div>
 
             <section className="trendingCard__info">
