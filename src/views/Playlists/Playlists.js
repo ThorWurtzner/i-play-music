@@ -20,11 +20,11 @@ export default function Playlists() {
             </section>
 
             <section className="playlists__songList">
-                <Song song="Old Town Road" artist="Bolly Ray Cyrus" length="3:58" />
-                <Song song="Old Town Road" artist="Bolly Ray Cyrus" length="3:58" />
-                <Song song="Old Town Road" artist="Bolly Ray Cyrus" length="3:58" />
-                <Song song="Old Town Road" artist="Bolly Ray Cyrus" length="3:58" />
-                <Song song="Old Town Road" artist="Bolly Ray Cyrus" length="3:58" />
+                <Song song="Old Town Road" artist="Billy Ray Cyrus" length="3:58" />
+                <Song song="Old Town Road" artist="Billy Ray Cyrus" length="3:58" />
+                <Song song="Old Town Road" artist="Billy Ray Cyrus" length="3:58" />
+                <Song song="Old Town Road" artist="Billy Ray Cyrus" length="3:58" />
+                <Song song="Old Town Road" artist="Billy Ray Cyrus" length="3:58" />
                 <BigButton text="LISTEN ALL" color="var(--darkPink)" />
             </section>
 
