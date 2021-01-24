@@ -12,6 +12,7 @@ import AlbumDetails from './views/AlbumDetails/AlbumDetails';
 import Songs from './views/Songs/Songs';
 import Categories from "./views/Categories/Categories";
 import Featured from './views/Featured/Featured';
+import Playlists from './views/Playlists/Playlists';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
 			<Songs path="/songs" />
 			<Categories path="/categories" />
 			<Featured path="/featured" />
+			<Playlists path="/playlists" />
 		</Router>
 	)
 }

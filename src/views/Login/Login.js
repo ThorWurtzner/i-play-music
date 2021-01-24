@@ -1,4 +1,5 @@
 import { Link } from "@reach/router";
+import BigButton from "../../components/BigButton/BigButton";
 import "./Login.css";
 
 export default function Login() {
@@ -23,7 +24,7 @@ export default function Login() {
                     </div>
                 </div>
 
-                <Link to="/trends"><button>LOG IN</button></Link>
+                <Link to="/trends"><BigButton text="LOG IN" color="var(--darkFont)" /></Link>
             </form>
 
             <div className="login__fingerprint">
