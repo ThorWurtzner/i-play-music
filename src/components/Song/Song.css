@@ -1,6 +1,6 @@
 
 .song {
-    height: 75px;
+    margin: 25px 0;
     max-width: 400px;
     display: flex;
     align-items: center;

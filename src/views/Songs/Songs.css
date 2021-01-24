@@ -1,0 +1,32 @@
+
+.songs {
+    background-color: var(--darkMainBg);
+    min-height: 100vh;
+
+    padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
+    overflow-y: auto;
+}
+
+.songs__container {
+    position: relative;
+}
+
+.songs__container aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    /* top: calc(85px + 81px); */
+    right: -3%;
+    color: var(--darkFont);
+    font-size: 10px;
+}
+
+.songs__container__songList {
+    margin-right: 25px;
+}
+
+.songs__container__songList article:first-child {
+    margin-top: 0;
+}

@@ -9,6 +9,7 @@ import Albums from './views/Albums/Albums';
 import Player from './views/Player/Player';
 import Artists from './views/Artists/Artists';
 import AlbumDetails from './views/AlbumDetails/AlbumDetails';
+import Songs from './views/Songs/Songs';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
 			<AlbumDetails path="/album" image="https://picsum.photos/500" albumTitle="Old Town Road" songCount="12" />
 			<Player path="/player" song="Don't Call Me Up" artist="Mabel" songLength="3:40" />
 			<Artists path="/artists" />
+			<Songs path="/songs" />
 		</Router>
 	)
 }
