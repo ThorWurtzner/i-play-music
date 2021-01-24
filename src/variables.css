@@ -1,12 +1,12 @@
 
 
 :root {
-    --darkFont: #fff;
+    --darkFont: #eee;
     --darkMainBg: #341931;
     --darkPink: #ff1168;
     --darkBlue: #111625;
     --linearColor: linear-gradient(#EE0979, #FF6A00);
 
     --pagePadding: 0 6%;
-    --navPadding: 130px;
+    --navPadding: 100px;
 }

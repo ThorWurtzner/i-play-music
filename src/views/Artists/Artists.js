@@ -15,7 +15,7 @@ export default function Artists() {
                 <ViewAll title="Artist of the Month" />
                 <div className="artists__artistsMonth__slider">
                     <ArtistSlide scale="0.8" image="https://picsum.photos/300/200" artist="Jonas Brothers" month="September" />
-                    <ArtistSlide scale="1" image="https://picsum.photos/300/201" artist="Jonas Brothers" month="September" />
+                    <ArtistSlide image="https://picsum.photos/300/201" artist="Jonas Brothers" month="September" />
                     <ArtistSlide scale="0.8" image="https://picsum.photos/300/202" artist="Jonas Brothers" month="September" />
                 </div>
             </section>

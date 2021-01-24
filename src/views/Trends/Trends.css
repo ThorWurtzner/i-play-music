@@ -1,6 +1,6 @@
 
 .trends {
-    background-color: var(--darkPink);
+    background-color: var(--darkMainBg);
     min-height: 100vh;
 
     padding: var(--pagePadding);
@@ -20,7 +20,7 @@
     top: 515px;
     height: 300px;
     display: flex;
-    background: #fff;
+    background: var(--darkBlue);
     border-radius: 10px 0 0 10px;
 
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 .trendingNow h4 {
-    color: var(--darkPink);
+    color: var(--darkFont);
     margin-left: 15px;
     font-size: 17px;
 }

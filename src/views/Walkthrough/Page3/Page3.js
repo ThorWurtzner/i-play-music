@@ -23,7 +23,7 @@ export default function Page3() {
                         </div>
                     </div>
                 </section>
-                <Link to="/trends"><p className="page2__content__skip">SKIP</p></Link>
+                <p className="page2__content__skip">SKIP</p>
             </main>
         </Link>
     )

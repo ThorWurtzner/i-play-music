@@ -5,9 +5,5 @@ export default function CircleIcon(props) {
         <div className="circleIcon">
             <img src={props.icon} alt="" />
         </div>
-
-        // <div className="circleIcon">
-        //     <img src={props.icon} />
-        // </div>
     )
 }

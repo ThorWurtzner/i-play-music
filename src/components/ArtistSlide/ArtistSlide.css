@@ -1,7 +1,8 @@
 
 .artistSlide {
     /* width gør absolut intet, har slået hovedet imod muren i flere timer, lortet virker ik */
-    width: 300px;
+    width: 250px;
+    height: 150px;
     position: relative;
     border-radius: 10px;
 
@@ -9,6 +10,8 @@
     flex-direction: column;
     justify-content: flex-end;
     box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.21);
+    
+    flex-shrink: 0;
 }
 
 .artistSlide img {

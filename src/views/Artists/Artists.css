@@ -11,12 +11,12 @@
 
 .artists__artistsMonth__slider {
     position: relative;
-    left: -50%;
-    /* CONTAINER BLIVER IKKE STØRRE, CHILDREN BLIVER BARE MINDRE TIL AT PASSE BREDDEN */
-    min-width: 200%;
-    height: 150px;
+    margin: 0 auto;
+    min-width: 500px;
+    left: -210px;
+    /* height: 150px; */
     display: flex;
-    /* gap: 15px; */
+    /* gap: 25px; */
 
     margin-bottom: 11%;
 }
@@ -32,12 +32,12 @@
 .artists__topArtists__countryBoxes {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 
 .artists__topArtists__countryBoxes__us, .artists__topArtists__countryBoxes__global  {
     width: 50%;
-    height: 150px;
+    height: 140px;
     background: linear-gradient(to top, #5EB11C, #3A7634);
     border-radius: 10px;
     box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.21);
