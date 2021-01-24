@@ -1,0 +1,9 @@
+
+.undercategories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
+
+    margin: 10px 0;
+}

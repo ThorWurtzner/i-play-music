@@ -1,0 +1,15 @@
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 51px;
+    padding: 0 25px;
+    /* margin-bottom: 20px; */
+}
+
+.category h3 {
+    font-size: 14px;
+    color: var(--darkFont);
+}

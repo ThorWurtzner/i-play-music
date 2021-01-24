@@ -20,7 +20,7 @@ export default function Trends() {
             <Header />
             <Headline title="Latest Trends" />
             {/* <TrendingCard className="trendingCardFirst" props={data[0]}/> */}
-            <TrendingCard className="trendingCardFirst" hashtag="45" image="./images/country.jpg" people="2,003" title="Country" />
+            <TrendingCard className="trendingCardFirst" hashtag="45" image="https://picsum.photos/505" people="2,003" title="Country" />
             <div className="trendingNow">
                 <h4>Trending <br /> Now</h4>
                 <div className="trendingNowCard">
@@ -33,9 +33,9 @@ export default function Trends() {
                 </div>
             </div>
             {/* {data.slice(1).map(content => <TrendingCard props={content} key={content.title} />)} */}
-            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
-            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
-            <TrendingCard hashtag="45" image="./images/country.jpg" title="Country" />
+            <TrendingCard hashtag="45" image="https://picsum.photos/500" title="Country" />
+            <TrendingCard hashtag="45" image="https://picsum.photos/501" title="Country" />
+            <TrendingCard hashtag="45" image="https://picsum.photos/502" title="Country" />
         </main>
         <FooterNav />
         </>

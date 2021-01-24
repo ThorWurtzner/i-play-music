@@ -1,0 +1,13 @@
+
+
+.undercategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.undercategory p {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--darkFont);
+}
