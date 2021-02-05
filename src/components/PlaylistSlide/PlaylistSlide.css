@@ -8,6 +8,10 @@
     flex-shrink: 0;
 }
 
+.playlistSlide img {
+    pointer-events: none;
+}
+
 .playlistSlide h2 {
     color: var(--darkFont);
     font-size: 18px;

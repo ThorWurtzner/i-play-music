@@ -25,6 +25,15 @@
     align-items: center;
 }
 
+.player__image div {
+    position: absolute;
+    width: 80%;
+    height: 115%;
+    background-color: #ee097817;
+    border-radius: 50%;
+    z-index: 0;
+}
+
 
 .player__image__bg {
     position: absolute;
@@ -32,7 +41,9 @@
 }
 
 .player__image__main {
+    border-radius: 50%;
     width: 70%;
+    border: 15px solid #ee097844;
 }
 
 .player__content {

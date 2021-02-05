@@ -1,15 +1,25 @@
-import { Link } from "@reach/router";
-import BigButton from "../../components/BigButton/BigButton";
 import "./Login.css";
+import BigButton from "../../components/BigButton/BigButton";
+import querystring from "querystring";
 
 export default function Login() {
 
+    var queryParameters = querystring.stringify({
+        response_type: "code",
+        client_id: "c0f3a5f91b3b4f938c1910577ce8fe60",
+        scope: "user-read-private user-read-email",
+        redirect_uri: "http://localhost:8888/callback",
+        state: "oawhnvfufaiwnovhiowuhfvnweofvhmsfovihwseofcsdwiuhjgvuiyhsdngvmiodhfguiusydghnvuydr"
+    });
+
     return (
         <main className="login">
-            <h1 className="login__title">Log In</h1>
+            {/* <h1 className="login__title">Log In</h1> */}
+
+            <img src="./images/icons/main-notext.png" alt="app logo" />
 
             <form className="login__form">
-                <div>
+                {/* <div>
                     <label htmlFor="username">Username</label>
                     <div>
                         <input type="text" id="username" name="username" placeholder="Enter your username" />
@@ -22,9 +32,11 @@ export default function Login() {
                         <input type="password" id="password" name="password" placeholder="Enter your password" />
                         <img src="./images/icons/key.png" alt="key icon" />
                     </div>
-                </div>
+                </div> */}
 
-                <Link to="/trends"><BigButton text="LOG IN" color="var(--darkFont)" /></Link>
+                <a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>
+                    <button>Log in with Spotify<i className="fab fa-spotify"></i></button>
+                </a>
             </form>
 
             <div className="login__fingerprint">

@@ -2,15 +2,15 @@ import "./Header.css";
 
 export default function Header(props) {
 
-    function goBack() {
-        window.history.back();
-    }
+    // function goBack() {
+    //     window.history.back();
+    // }
 
     return (
         <header className="header">
-            <button onClick={goBack}><img src="./images/icons/arrow-back.png" alt="back arrow" /></button>
+            <button onClick={() => window.history.back()}><img src="/images/icons/arrow-back.png" alt="back arrow" /></button>
             <h3>{props.heading}</h3>
-            <img src="./images/icons/search.png" alt="search icon" style={{visibility: props.visibility}} />
+            <img src="/images/icons/search.png" alt="search icon" style={{visibility: props.visibility}} />
         </header>
 
         // <header className="header">

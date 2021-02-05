@@ -2,11 +2,11 @@
 .login {
     width: 100vw;
     height: 100vh;
-    background-color: var(--darkBlue);
+    background-color: var(--darkMainBg);
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     padding: var(--pagePadding);
@@ -21,8 +21,12 @@
 
 .login__form {
     width: 100%;
-    margin-top: 100px;
+    max-width: 600px;
+    /* margin-top: 100px; */
     margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .login__form div {
@@ -62,7 +66,8 @@
 .login__form button {
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    border: 3px solid #fff;
+    border: none;
+    border-bottom: 3px solid var(--darkFont);
     background: none;
     height: 60px;
     border-radius: 25px;
@@ -71,7 +76,24 @@
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+
+    pointer-events: none;
 }
+
+.fa-spotify {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.login__form a {
+    display: block;
+    /* height: 60px; */
+}
+
 
 .login__form img {
     width: 18px;

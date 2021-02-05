@@ -22,7 +22,11 @@
 
 .albumSpecifics__content h3 {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 170px;
 }
 
 .albumSpecifics__content p {

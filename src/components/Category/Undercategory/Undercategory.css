@@ -9,5 +9,10 @@
 .undercategory p {
     font-size: 13px;
     font-weight: 300;
+    margin-right: 20px;
     color: var(--darkFont);
+}
+
+.undercategory:first-child {
+    margin-top: 15px;
 }

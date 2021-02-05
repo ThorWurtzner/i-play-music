@@ -3,9 +3,23 @@ import Headline from "../../components/Headline/Headline";
 import FooterNav from "../../components/FooterNav/FooterNav";
 import "./Categories.css";
 import Category from "../../components/Category/Category";
-import Undercategories from "../../components/Undercategories/Undercategories";
+// import Undercategories from "../../components/Undercategories/Undercategories";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
+import TokenContext from "../../TokenContext";
 
 export default function Categories(props) {
+    var [token] = useContext(TokenContext);
+    var [content, setContent] = useState({});
+
+    useEffect(function() {
+        axios.get("https://api.spotify.com/v1/browse/categories?country=DK", {
+            headers: {
+                "Authorization": "Bearer " + token.access_token
+            }
+        })
+        .then(response => setContent(response.data));
+    }, [token, setContent])
 
     function randomHsl() {
         return `hsla(${(Math.random() * 360)}, 80%, 40%, 1`;
@@ -17,16 +31,12 @@ export default function Categories(props) {
             <Headline title="Categories" />
 
             <section className="categories__container">
-                <Category category="Alternative" color={randomHsl()} />
-                <Category category="Blues" color={randomHsl()} />
-                <Undercategories />
-                <Category category="Classical" color={randomHsl()} />
-                <Category category="Country" color={randomHsl()} />
-                <Category category="Dance" color={randomHsl()} />
-                <Category category="Electronic" color={randomHsl()} />
-                <Category category="Fitness" color={randomHsl()} />
-                <Category category="Hip-Hop/Rap" color={randomHsl()} />
-                <Category category="Industrial" color={randomHsl()} />
+                {/* <Undercategories /> */}
+                {content.categories?.items.map(function(category) {
+                    return(
+                        <Category category={category.name} href={category.href} color={randomHsl()} key={category.name} />
+                    )
+                })}
             </section>
 
             <FooterNav />

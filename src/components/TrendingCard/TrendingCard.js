@@ -1,5 +1,5 @@
 import CircleIcon from "../CircleIcon/CircleIcon";
-import CirclePortrait from "../CirclePortrait/CirclePortrait";
+// import CirclePortrait from "../CirclePortrait/CirclePortrait";
 import TalkingAbout from "../TalkingAbout/TalkingAbout";
 import "./TrendingCard.css";
 // import image from "./concert.png"

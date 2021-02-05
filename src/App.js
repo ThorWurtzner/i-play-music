@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Router } from "@reach/router";
 import './App.css';
 import Walkthrough from './views/Walkthrough/Walkthrough';
@@ -13,32 +12,38 @@ import Songs from './views/Songs/Songs';
 import Categories from "./views/Categories/Categories";
 import Featured from './views/Featured/Featured';
 import Playlists from './views/Playlists/Playlists';
+import Callback from './views/Callback/Callback';
+import TokenContext from "./TokenContext";
+import { useState } from "react";
 
 function App() {
-
-	var [database, setData] = useState([]);
-
-	useEffect(function() {
-		fetch("./database.json")
-			.then(data => data.json())
-			.then(data => setData(data))
-	}, []);
+	var tokenState = useState(null);
 
 	return (
-		<Router>
-			<Walkthrough data={database.walkthrough} path="/" />
-			<Login path="/login" />
-			<Trends data={database.trends} path="/trends" />
-			<Feed data={database.trends} path="/feed" />
-			<Albums path="/albums" />
-			<AlbumDetails path="/album" image="https://picsum.photos/500" albumTitle="Old Town Road" songCount="12" />
-			<Player path="/player" song="Don't Call Me Up" artist="Mabel" songLength="3:40" />
-			<Artists path="/artists" />
-			<Songs path="/songs" />
-			<Categories path="/categories" />
-			<Featured path="/featured" />
-			<Playlists path="/playlists" />
-		</Router>
+		<TokenContext.Provider value={tokenState}>
+			<Router>
+				<Walkthrough path="/walkthrough" />
+
+				{/* Need fixing of button styling because of added link */}
+				<Login path="/" />
+				
+				<Callback path="/callback" />
+				<Trends path="/trends" />
+				<Feed path="/feed" />
+				<Albums path="/albums" />
+				{/* <Albums path="/albums/:id" /> */}
+
+				<AlbumDetails path="/album/:id" />
+				<Player path="/player/:id" />
+				<Artists path="/artists" />
+				<Songs path="/songs" />
+				<Categories path="/categories" />
+				<Featured path="/featured" />
+				
+				<Playlists path="/playlists" />
+				<Playlists path="/playlists/:id" />
+			</Router>
+		</TokenContext.Provider>
 	)
 }
 

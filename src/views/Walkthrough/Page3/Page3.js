@@ -4,7 +4,7 @@ import background from "./bgAsset3.svg";
 
 export default function Page3() {
     return (
-        <Link to="/login"> 
+        <Link to="/playlists"> 
             <main className="page3">
                 <div className="page3__bg" style={{backgroundImage: `url(${background})`}}></div>
 
