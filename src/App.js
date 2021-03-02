@@ -16,11 +16,11 @@ import Callback from './views/Callback/Callback';
 import TokenContext from "./TokenContext";
 import { useState } from "react";
 // import ErrorBoundary from "./components/ErrorBoundary.js/ErrorBoundary";
-import * as Sentry from "@sentry/react";
+// import * as Sentry from "@sentry/react";
 
-Sentry.init({
-	dsn: "https://7209ddcdad5f4de78ecc9532e3f818dc@o539727.ingest.sentry.io/5657516"
-})
+// Sentry.init({
+// 	dsn: "https://7209ddcdad5f4de78ecc9532e3f818dc@o539727.ingest.sentry.io/5657516"
+// })
 
 function App() {
 	var tokenState = useState(null);
