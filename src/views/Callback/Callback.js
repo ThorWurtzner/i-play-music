@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import TokenContext from "../../TokenContext";
 import { navigate } from "@reach/router";
 
-// aquires and uses the response object gotten from spotify
+// acquires and uses the response object gotten from spotify
 export default function Callback(props) {
     var [token, setToken] = useContext(TokenContext);
 
@@ -15,7 +15,7 @@ export default function Callback(props) {
         }))
         .then(response => {
             setToken(response.data);
-            navigate("/playlists");
+            navigate("/featured");
         });
     }, [setToken, code]);
     

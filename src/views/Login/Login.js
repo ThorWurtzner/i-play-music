@@ -1,5 +1,4 @@
 import "./Login.css";
-import BigButton from "../../components/BigButton/BigButton";
 import querystring from "querystring";
 
 export default function Login() {

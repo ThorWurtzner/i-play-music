@@ -6,6 +6,7 @@ import FeaturedCard from "../../components/FeaturedCard/FeaturedCard";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import TokenContext from "../../TokenContext";
+import ErrorBoundary from "../../components/ErrorBoundary.js/ErrorBoundary";
 
 export default function Featured() {
     var [token] = useContext(TokenContext);
@@ -27,13 +28,15 @@ export default function Featured() {
             <Header heading="FEATURED" />
             <Headline title="Featured" />
 
-            <div>
-                {content.playlists && content.playlists.items.map(function(playlist) {
-                    return (
-                        <FeaturedCard image={playlist.images[0].url} album={playlist.name} type={playlist.type} id={playlist.id} />
-                    )
-                })}
-            </div>
+            <ErrorBoundary message="Featured playlists can't be acquired at this moment">
+                <div>
+                    {content.playlists && content.playlists.items.map(function(playlist) {
+                        return (
+                            <FeaturedCard key={playlist.name} image={playlist.images[0].url} album={playlist.name} type={playlist.type} id={playlist.id} />
+                        )
+                    })}
+                </div>
+            </ErrorBoundary>
 
             <FooterNav />
         </main>

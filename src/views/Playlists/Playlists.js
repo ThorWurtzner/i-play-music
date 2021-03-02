@@ -8,6 +8,7 @@ import PlaylistSlide from "../../components/PlaylistSlide/PlaylistSlide";
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import TokenContext from "../../TokenContext";
+import * as Sentry from "@sentry/react";
 // import Fetcher from "../../Fetcher";
 
 export default function Playlists(props) {
@@ -53,15 +54,17 @@ export default function Playlists(props) {
                 })}
             </section>
 
-            <section className="playlists__songList">
-                {songs.tracks?.items.map(function(song) {
-                    console.log(song)
-                    return (
-                        <Song song={song.track.name} artist={song.track.artists[0].name} length={song.track.duration_ms} id={song.track.id} key={song.track.name} />
-                    )
-                })}
-                <BigButton text="LISTEN ALL" color="var(--darkPink)" visibility={hidden} />
-            </section>
+            <Sentry.ErrorBoundary>
+                <section className="playlists__songList">
+                    {songs.tracks?.items.map(function(song) {
+                        console.log(song)
+                        return (
+                            <Song song={song.track.name} artist={song.track.artists[0].name} length={song.track.duration_ms} id={song.track.id} key={song.track.name} />
+                        )
+                    })}
+                    <BigButton text="LISTEN ALL" color="var(--darkPink)" visibility={hidden} />
+                </section>
+            </Sentry.ErrorBoundary>
 
             <FooterNav />
         </main>

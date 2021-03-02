@@ -25,7 +25,7 @@ export default function Albums() {
 
     var albums = [];
     content.albums?.items.forEach(element => {
-        if (element.album_type == "album") {
+        if (element.album_type === "album") {
             albums.push(element);
         }
     });

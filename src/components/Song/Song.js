@@ -7,6 +7,7 @@ export default function Song(props) {
 
     var length = timeCalc(props.length)
     
+    throw new Error("Error has been simulated")
     return (
         <Link to={"/player/" + props.id}>
             <article className="song">
@@ -14,7 +15,7 @@ export default function Song(props) {
                     <CircleIcon icon="/images/icons/playerPlay.png" />
                     <section>
                         <h3>{props.song}</h3>
-                        <p>{props.artist}</p>
+                        <p>{props.artist}</p> 
                     </section>
                 </div>
                 <p className="song__songLength">{length}</p>

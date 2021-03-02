@@ -2,6 +2,7 @@ import { Link } from "@reach/router";
 import "./FeaturedCard.css";
 
 export default function FeaturedCard(props) {
+    // throw new Error("Simulated error");
     return (
         <Link to={"/playlists/" + props.id}>
             <article className="featuredCard">

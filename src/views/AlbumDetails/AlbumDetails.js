@@ -20,7 +20,7 @@ export default function AlbumDetails(props) {
             }
         })
         .then(response => setContent(response.data));
-    }, [token, setContent])
+    }, [token, setContent, props.id])
 
     console.log(content);
 

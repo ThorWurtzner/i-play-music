@@ -16,12 +16,12 @@ export default function Category(props) {
             }
         })
         .then(response => setContent(response.data))
-    }, [token, setContent])
+    }, [token, setContent, props.href])
 
     console.log(content);
 
     function handleClick(event) {
-        if (event.target.nextElementSibling.style.display == "none") {
+        if (event.target.nextElementSibling.style.display === "none") {
             event.target.nextElementSibling.style.display = "flex";
         } else {
             event.target.nextElementSibling.style.display = "none";
