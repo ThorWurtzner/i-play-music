@@ -1,0 +1,67 @@
+
+.artists {
+    background-color: var(--darkMainBg);
+    min-height: 100vh;
+
+    padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
+
+    overflow: hidden;
+}
+
+.artists__artistsMonth__slider {
+    position: relative;
+    margin: 0 auto;
+    min-width: 500px;
+    left: -210px;
+    /* height: 150px; */
+    display: flex;
+    /* gap: 25px; */
+
+    margin-bottom: 11%;
+}
+
+
+.artists__featured__portraits {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 11%;
+}
+
+.artists__topArtists__countryBoxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.artists__topArtists__countryBoxes__us, .artists__topArtists__countryBoxes__global  {
+    width: 50%;
+    height: 140px;
+    background: linear-gradient(to top, #5EB11C, #3A7634);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.21);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--darkFont);
+}
+
+.artists__topArtists__countryBoxes__us h2, .artists__topArtists__countryBoxes__global h2 {
+    font-size: 30px;
+}
+
+.artists__topArtists__countryBoxes__us p, .artists__topArtists__countryBoxes__global p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.artists__topArtists__countryBoxes__us {
+    background: linear-gradient(to top, #5EB11C, #3A7634);
+}
+
+.artists__topArtists__countryBoxes__global {
+    background: linear-gradient(to top, #00A1CB, #115793);
+}

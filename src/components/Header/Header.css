@@ -1,0 +1,28 @@
+
+.header {
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    position: relative;
+    z-index: 9001;
+}
+
+.header button {
+    border: none;
+    background: none;
+}
+
+.header img {
+    height: 15px;
+}
+
+.header h3 {
+    color: var(--darkFont);
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}

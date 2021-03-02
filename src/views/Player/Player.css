@@ -1,0 +1,121 @@
+
+.player {
+    background-color: var(--darkMainBg);
+    min-height: 100vh;
+
+    padding: var(--pagePadding);
+    overflow: hidden;
+
+    position: relative;
+}
+
+.player__image {
+    width: 100vw;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__image div {
+    position: absolute;
+    width: 80%;
+    height: 115%;
+    background-color: #ee097817;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+.player__image__bg {
+    position: absolute;
+    width: 100%;
+}
+
+.player__image__main {
+    border-radius: 50%;
+    width: 70%;
+    border: 15px solid #ee097844;
+}
+
+.player__content {
+    width: 88%;
+    position: absolute;
+    bottom: 0;
+}
+
+.player__content__info {
+    color: var(--darkFont);
+    text-align: center;
+}
+
+.player__content__info h1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.player__content__info p {
+    font-weight: 200;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.player__content__soundBar {
+    height: 4px;
+    background: linear-gradient(to left, #EE0979, #FF6A00);
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.player__content__soundBar__progress {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ff11684d;
+
+    position: absolute;
+    left: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player__content__soundBar__progress::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--darkPink);
+}
+
+.player__content__time {
+    display: flex;
+    justify-content: space-between;
+    color: var(--darkFont);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.player__content__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}

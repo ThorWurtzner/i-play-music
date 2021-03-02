@@ -1,0 +1,56 @@
+@import "./variables.css";
+
+@import "./App.css";
+
+@import "./views/Walkthrough/Walkthrough.css";
+@import "./views/Walkthrough/Page1/Page1.css";
+@import "./views/Walkthrough/Page2/Page2.css";
+@import "./views/Walkthrough/Page3/Page3.css";
+@import "./views/Login/Login.css";
+@import "./views/Trends/Trends.css";
+
+@import "./components/Welcome/Welcome.css";
+@import "./components/TrendingCard/TrendingCard.css";
+@import "./components/TalkingAbout/TalkingAbout.css";
+@import "./components/Headline/Headline.css";
+@import "./components/Header/Header.css";
+@import "./components/FooterNav/FooterNav.css";
+@import "./components/CirclePortrait/CirclePortrait.css";
+@import "./components/CircleIcon/CircleIcon.css";
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements get default styles */
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, label {
+  display: block;
+}

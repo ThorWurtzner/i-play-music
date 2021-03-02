@@ -1,0 +1,92 @@
+
+.song {
+    margin-bottom: 25px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--darkFont);
+}
+
+.song__content {
+    display: flex;
+    height: 45px;
+    align-items: center;
+}
+
+.song__content div {
+    width: 40px;
+    height: 40px;
+}
+
+.song__content div img {
+    width: 12px;
+    height: 15px;
+}
+
+.song__content section {
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.song__content h3 {
+    font-weight: 400;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.song__content p {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.song__songLength {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+
+/* 
+.albumSpecifics {
+    height: 85px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--darkFont);
+}
+
+.albumSpecifics__content {
+    display: flex;
+}
+
+.albumSpecifics__content div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.albumSpecifics__content h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.albumSpecifics__content p {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.albumSpecifics__songCount {
+    font-weight: 200;
+    font-size: 12px;
+} */

@@ -1,0 +1,20 @@
+
+.hashtag {
+    background-color: var(--darkPink);
+    height: 35px;
+    border-radius: 20px;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
+
+    flex-shrink: 0;
+}
+
+.hashtag p {
+    color: var(--darkFont);
+    font-weight: 600;
+    font-size: 13px;
+}

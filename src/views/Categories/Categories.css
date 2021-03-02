@@ -1,0 +1,15 @@
+
+.categories {
+    background-color: var(--darkMainBg);
+
+    padding: var(--pagePadding);
+    padding-bottom: var(--navPadding);
+
+    min-height: 100vh;
+}
+
+.categories__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

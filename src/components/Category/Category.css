@@ -1,0 +1,29 @@
+
+
+.categoryContainer__category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 51px;
+    padding: 0 25px;
+    /* margin-bottom: 20px; */
+}
+
+.categoryContainer__category h3 {
+    font-size: 14px;
+    color: var(--darkFont);
+    pointer-events: none;
+}
+
+.categoryContainer__category img {
+    pointer-events: none;
+}
+
+.categoryContainer__undercategories {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
+
+    /* margin: 10px 0; */
+}
