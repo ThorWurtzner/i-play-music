@@ -7,7 +7,7 @@ export default function Song(props) {
 
     var length = timeCalc(props.length)
     
-    throw new Error("Error has been simulated")
+    // throw new Error("Error has been simulated")
     return (
         <Link to={"/player/" + props.id}>
             <article className="song">
