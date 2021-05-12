@@ -22,33 +22,35 @@ import { useState } from "react";
 // 	dsn: "https://7209ddcdad5f4de78ecc9532e3f818dc@o539727.ingest.sentry.io/5657516"
 // })
 
+import ErrorBoundary from "./ErrorBoundary";
+
 function App() {
 	var tokenState = useState(null);
 
 	return (
 		<TokenContext.Provider value={tokenState}>
-			<Router>
-				<Walkthrough path="/walkthrough" />
+			<ErrorBoundary>
+				<Router>
+						<Login path="/" />
+						<Walkthrough path="/walkthrough" />
+						
+						<Callback path="/callback" />
+						<Trends path="/trends" />
+						<Feed path="/feed" />
+						<Albums path="/albums" />
+						{/* <Albums path="/albums/:id" /> */}
 
-				{/* Need fixing of button styling because of added link */}
-				<Login path="/" />
-				
-				<Callback path="/callback" />
-				<Trends path="/trends" />
-				<Feed path="/feed" />
-				<Albums path="/albums" />
-				{/* <Albums path="/albums/:id" /> */}
-
-				<AlbumDetails path="/album/:id" />
-				<Player path="/player/:id" />
-				<Artists path="/artists" />
-				<Songs path="/songs" />
-				<Categories path="/categories" />
-				<Featured path="/featured" />
-				
-				<Playlists path="/playlists" />
-				<Playlists path="/playlists/:id" />
-			</Router>
+						<AlbumDetails path="/album/:id" />
+						<Player path="/player/:id" />
+						<Artists path="/artists" />
+						<Songs path="/songs" />
+						<Categories path="/categories" />
+						<Featured path="/featured" />
+						
+						<Playlists path="/playlists" />
+						<Playlists path="/playlists/:id" />
+				</Router>
+			</ErrorBoundary>
 		</TokenContext.Provider>
 	)
 }

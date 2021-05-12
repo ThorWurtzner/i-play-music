@@ -7,7 +7,8 @@ export default function Login() {
         response_type: "code",
         client_id: "c0f3a5f91b3b4f938c1910577ce8fe60",
         scope: "user-read-private user-read-email",
-        redirect_uri: process.env.NODE_ENV === "production" ? "https://i-play-music.netlify.app/callback" : "http://localhost:8888/callback",
+        // redirect_uri: process.env.NODE_ENV === "production" ? "https://i-play-music.netlify.app/callback" : "http://localhost:8888/callback",
+        redirect_uri: process.env.REDIRECT_URI || "http://localhost:8888/callback",
         state: "oawhnvfufaiwnovhiowuhfvnweofvhmsfovihwseofcsdwiuhjgvuiyhsdngvmiodhfguiusydghnvuydr"
     });
 

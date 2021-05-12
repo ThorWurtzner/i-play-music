@@ -9,10 +9,19 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import TokenContext from "../../TokenContext";
 
+
+import { Redirect } from "@reach/router";
+import Login from "../Login/Login";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+
 export default function Albums() {
 
     var [token] = useContext(TokenContext);
     var [content, setContent] = useState({});
+    
 
     useEffect(function() {
         axios.get("https://api.spotify.com/v1/browse/new-releases", {
@@ -20,8 +29,11 @@ export default function Albums() {
                 "Authorization": "Bearer " + token.access_token
             }
         })
-        .then(response => setContent(response.data));
+        .then(response => setContent(response.data))
     }, [token, setContent])
+
+    
+    
 
     var albums = [];
     content.albums?.items.forEach(element => {
@@ -29,8 +41,6 @@ export default function Albums() {
             albums.push(element);
         }
     });
-
-    console.log(albums);
 
     return (
         <>
@@ -40,11 +50,22 @@ export default function Albums() {
             <section className="albums__featured">
                 <ViewAll title="Featured Albums" />
                 <div className="albums__featured__images">
-                    {albums.map(function(album) {
-                        return (
-                            <AlbumCover size="130px" image={album.images[1].url} key={album.name} />
-                        )
-                    })}
+                    <Carousel
+                        autoPlay={false}
+                        showArrows={true}
+                        showIndicators={false}
+                        centerMode={true}
+                        centerSlidePercentage={45}
+                        // selectedItem={2}
+                        // swipeable={true}
+                        swipeScrollTolerance={20}
+                    >
+                        {albums.map(function(album) {
+                            return (
+                                <AlbumCover size="130px" image={album.images[1].url} key={album.name} />
+                            )
+                        })}
+                    </Carousel>
                 </div>
             </section>
 

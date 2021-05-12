@@ -2,3 +2,10 @@
 .active {
     filter: brightness(1000%);
 }
+
+/* VERY INTRUSIVE, ONLY MEANT TO TEST ERROR BOUNDARY
+    REMOVES REACT DEVELOPMENT ERROR OVERLAY */
+iframe
+{
+    display: none;
+}

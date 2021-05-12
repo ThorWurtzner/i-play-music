@@ -10,6 +10,11 @@ import axios from "axios";
 import TokenContext from "../../TokenContext";
 // import * as Sentry from "@sentry/react";
 // import Fetcher from "../../Fetcher";
+import placeholder from "./playlistPlaceholder.PNG";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 export default function Playlists(props) {
 
@@ -47,16 +52,24 @@ export default function Playlists(props) {
             <img className="playlists__decoration" src="/images/playlistsBg.svg" alt="decoration" />
 
             <section className="playlists__slider">
-                {content.items && content.items.map(function (playlist) {
-                    return (
-                        <PlaylistSlide playlist={playlist.name} image={playlist.images[0].url} id={playlist.id} key={playlist.name} />
-                    )
-                })}
+                <Carousel
+                    autoPlay={false}
+                    showArrows={true}
+                    showIndicators={true}
+                    centerMode={true}
+                    centerSlidePercentage={60}
+                    // selectedItem={2}
+                >
+                    {content.items && content.items.map(function (playlist) {
+                        return (
+                            <PlaylistSlide playlist={playlist.name} image={playlist.images[0]?.url || placeholder} id={playlist.id} key={playlist.name} />
+                        )
+                    })}
+                </Carousel>
             </section>
 
             <section className="playlists__songList">
                 {songs.tracks?.items.map(function (song) {
-                    console.log(song)
                     return (
                         <Song song={song.track.name} artist={song.track.artists[0].name} length={song.track.duration_ms} id={song.track.id} key={song.track.name} />
                     )

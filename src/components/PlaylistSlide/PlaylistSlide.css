@@ -16,6 +16,11 @@
     color: var(--darkFont);
     font-size: 18px;
     text-align: center;
+
+    /* width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 
 .playlistSlide__content {
